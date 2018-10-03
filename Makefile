@@ -33,6 +33,7 @@ check_version:
 setup:
 	$(GOCMD) get -u github.com/golang/dep/cmd/dep
 	$(GODEP) ensure
+	./build/variables.sh
 
 # Cross Compilation
 build-linux:
