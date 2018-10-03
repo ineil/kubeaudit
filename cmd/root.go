@@ -29,6 +29,7 @@ var RootCmd = &cobra.Command{
 	Short: "A Kubernetes security auditor",
 	Long: `kubeaudit is a program that checks security settings on your Kubernetes clusters.
 #patcheswelcome`,
+	Version: Version,
 }
 
 // Execute is a wrapper for the RootCmd.Execute method which will exit the program if there is an error.
